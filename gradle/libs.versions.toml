@@ -1,0 +1,10 @@
+[versions]
+kotlin = "1.8.10"
+demoplugin = "1.0.0-SNAPSHOT"
+
+[libraries]
+gradle-kotlin-jvm = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+[plugins]
+demo-plugin = { id = "com.projectronin.demo.plugin", version.ref = "demoplugin" }
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
