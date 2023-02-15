@@ -18,10 +18,5 @@ class DemoPlugin : Plugin<Project> {
         project.tasks.register<ListFilesTask>("listFiles") {
             includeSizes.set(configExtension.includeSizes)
         }
-
-        /**
-         * Registers [SourceSizeExtension] as the scope under a 'sourceSize' DSL extension
-         */
-        project.extensions.create<SourceSizeExtension>("sourceSizePlugin", project)
     }
 }
