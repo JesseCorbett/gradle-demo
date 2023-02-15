@@ -21,12 +21,6 @@ listFiles {
     includeSizes.set(true)
 }
 
-// Uses an extension to call a function which creates a Task
-sourceSizePlugin {
-    listSourceSize(sourceSets["main"])
-}
-
-
 
 tasks.test {
     useJUnitPlatform()
