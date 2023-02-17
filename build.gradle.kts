@@ -1,6 +1,5 @@
 plugins {
     kotlin("jvm") version "1.8.10"
-    id("com.projectronin.demo.plugin") version "1.0.0-SNAPSHOT"
     application
 }
 
