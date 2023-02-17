@@ -1,10 +1,9 @@
 [versions]
-kotlin = "1.8.10"
 demoplugin = "1.0.0-SNAPSHOT"
+apachecommons = "3.0"
 
 [libraries]
-gradle-kotlin-jvm = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+demo-plugin = { group = "org.apache.commons", name = "commons-lang3", version.ref = "apachecommons" }
 
 [plugins]
-demo-plugin = { id = "com.projectronin.demo.plugin", version.ref = "demoplugin" }
-kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
